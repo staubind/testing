@@ -15,9 +15,14 @@ function fizzBuzz(number) {
     if (number % 3 === 0) {
         returnString += 'FIZZ';
     }
+    if (number % 5 === 0) {
+        return 'BUZZ';
+    }
     return returnString;
 }
 
 // formalization of the below process
-console.log('3 should return FIZZ: ', fizzBuzz(3));
-console.log('36 should return FIZZ: ', fizzBuzz(36));
+// console.log('3 should return FIZZ: ', fizzBuzz(3));
+// console.log('36 should return FIZZ: ', fizzBuzz(36));
+
+module.exports = fizzBuzz;
